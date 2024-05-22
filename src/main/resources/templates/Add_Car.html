@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="" th:href="@{/css/Add_Car.css}" />
+</head>
+
+<body>
+	<a href="/admin/services">Back to Services</a>
+	<div class="addCars">
+		<h3 style="font-weight: bolder;color: seagreen;">ADD NEW CAR :</h3>
+		<form action="" th:action="@{/addingCar}" method="post">
+			Car_Name :
+			<input type="text" name="pname" value="" placeholder="Enter Car Name....." /> <br />
+			Car_Price :
+			<input type="text" name="pprice" placeholder="Enter Car Price...." /><br />
+			Car_Desc : <br />
+			<textarea name="pdescription" id="" cols="15" rows="1"
+				placeholder="Enter Car Description.."></textarea><br />
+
+			<button type="submit">Add_Car</button>
+
+		</form>
+	</div>
+</body>
+
+</html>

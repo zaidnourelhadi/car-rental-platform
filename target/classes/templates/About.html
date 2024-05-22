@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title> : ABOUT</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" href="" th:href="@{/css/About.css}" />
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f5;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 50px auto;
+			padding: 20px;
+			/*background-color: #fff;*/
+			border-radius: 8px;
+			/*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+		}
+		h1, h2 {
+			text-align: center;
+			color: #333;
+		}
+		p {
+			line-height: 1.6;
+		}
+	</style>
+</head>
+<body>
+	<nav th:replace="~{Navigation::navbar()}">	
+	</nav>
+
+	<div class="container information">
+
+
+		<h1>About Us</h1>
+		<p>Welcome to our Car Rental website!</p>
+		<p>At our website, we're committed to providing an unparalleled car rental experience. With a focus on customer satisfaction and reliability, we strive to make every journey with us exceptional.</p>
+		<h2>Our Mission</h2>
+		<p>Our mission is to offer convenient, affordable, and reliable car rental services to travelers worldwide. We aim to exceed customer expectations by providing top-notch vehicles, exceptional service, and hassle-free experiences.</p>
+		<h2>Meet Our Team</h2>
+		<p>Our team comprises dedicated professionals passionate about delivering the best car rental experience. From customer service representatives to maintenance experts, each member is committed to ensuring your satisfaction and safety.</p>
+		<p>Have questions or need assistance? Reach out to us, and we'll be happy to help.</p>
+
+	</div>
+
+	<div class="icons">
+		<h3><i class="fa-brands fa-square-instagram" style="color: black;"></i> :abcdxyz</h3>
+		<h3><i class="fa-solid fa-phone" style="color: black;"></i> : +212-0909090909</h3>
+		<h3> <i class="fa-solid fa-envelope" style="color: black;"></i>  : xyz488@gmail.com</h3>
+
+	</div>
+</body>
+</html>

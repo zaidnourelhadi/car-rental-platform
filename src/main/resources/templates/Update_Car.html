@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="" th:href="@{/css/Update_Car.css}" />
+</head>
+
+<body>
+		<a href="/admin/services">Back_To_Services</a>
+	<div class="updateCar">
+		<h3 style="font-weight: bolder;color: seagreen;">UPDATE EXISTING PROPERTY :</h3>
+		<form action="" th:action="@{'/updatingCar/'+${car.pid}}" th:object="${car}">
+			Car_Id :
+			<input type="hidden" th:text="${car.pid}" th:value="${car.pid}" /><br />
+			Car_Name :
+			<input type="text" name="pname" th:value="${car.pname}" /> <br />
+			Car_Price :
+			<input type="text" name="pprice" th:value="${car.pprice}" /><br />
+			Car_Desc : <br />
+			<textarea name="pdescription" th:value="${car.pdescription}" id="" cols="10" rows="1">
+
+	</textarea><br />
+			<button type="submit">Update_Car</button>
+
+		</form>
+	</div>
+</body>
+
+</html>
